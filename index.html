@@ -2,6 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- مهم للموبايل -->
   <title>مراجعة العلوم - أسئلة</title>
   <style>
     body {
@@ -13,15 +14,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
     .container {
       background: #fff;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      width: 80%;
+      width: 90%;
       max-width: 900px;
-      padding: 30px;
+      padding: 20px;
       text-align: center;
       position: relative;
     }
@@ -30,6 +31,11 @@
       margin-bottom: 20px;
       border-bottom: 2px solid #4facfe;
       padding-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
     .slide {
       display: none;
@@ -40,13 +46,16 @@
     }
     .buttons {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     button {
       background: #4facfe;
       border: none;
       color: #fff;
       padding: 10px 20px;
-      margin: 0 10px;
       font-size: 16px;
       border-radius: 10px;
       cursor: pointer;
@@ -60,6 +69,23 @@
       to {opacity: 1;}
     }
     ul { text-align: right; }
+
+    /* موبايل */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+      button {
+        padding: 8px 15px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
